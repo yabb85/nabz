@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Sleep configuration</h1>
+<table>
+    <tr>
+        <th>bunny name</th>
+        <th>monday wakeup</th>
+        <th>monday sleep</th>
+        <th>tuesday wakeup</th>
+        <th>tuesday sleep</th>
+        <th>wednesday wakeup</th>
+        <th>wednesday sleep</th>
+        <th>thursday wakeup</th>
+        <th>thursday sleep</th>
+        <th>friday wakeup</th>
+        <th>friday sleep</th>
+        <th>saturday wakeup</th>
+        <th>saturday sleep</th>
+        <th>sunday wakeup</th>
+        <th>sunday sleep</th>
+        <th>link</th>
+    </tr>
+    {% for conf in sleep_confs %}
+        <tr>
+            <td>{{ conf.bunny.name }}</td>
+            <td>{{ conf.monday_wake_up }}</td>
+            <td>{{ conf.monday_sleep }}</td>
+            <td>{{ conf.tuesday_wake_up }}</td>
+            <td>{{ conf.tuesday_sleep }}</td>
+            <td>{{ conf.wednesday_wake_up }}</td>
+            <td>{{ conf.wednesday_sleep }}</td>
+            <td>{{ conf.thursday_wake_up }}</td>
+            <td>{{ conf.thursday_sleep }}</td>
+            <td>{{ conf.friday_wake_up }}</td>
+            <td>{{ conf.friday_sleep }}</td>
+            <td>{{ conf.saturday_wake_up }}</td>
+            <td>{{ conf.saturday_sleep }}</td>
+            <td>{{ conf.sunday_wake_up }}</td>
+            <td>{{ conf.sunday_sleep }}</td>
+            <td><a href="/sleep/edit/{{ conf.bunny.sn }}">edit</a></td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

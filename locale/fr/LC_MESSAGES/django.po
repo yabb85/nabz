@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-16 21:08+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: bunny/forms.py:6 bunny/templates/bunny_detail.html:8
+msgid "bunny name"
+msgstr "nom du lapinou"
+
+#: bunny/forms.py:7 bunny/templates/bunny_detail.html:14
+msgid "serial number"
+msgstr "numero de serie du lapinou"
+
+#: bunny/templates/bunny.html:5
+msgid "All bunnnies"
+msgstr "Tous les lapinous"
+
+#: bunny/templates/bunny.html:25
+msgid "Add a new bunny"
+msgstr "Ajouter un lapinou"
+
+#: bunny/templates/bunny_detail.html:20
+msgid "plugin on one click action"
+msgstr "choix du plugin lors d'un clic"
+
+#: bunny/templates/bunny_detail.html:26
+msgid "plugin on double click action"
+msgstr "choix du plugin lors d'un double clic"
+
+#: bunny/templates/bunny_detail.html:32
+msgid "lang"
+msgstr "langue"
+
+#: bunny/templates/bunny_detail.html:36
+msgid "save"
+msgstr "enregister"
+
+#: sleep/models.py:8
+msgid "monday"
+msgstr "lundi"
+
+#: sleep/models.py:9
+msgid "tuesday"
+msgstr "mardi"
+
+#: sleep/models.py:10
+msgid "wednesday"
+msgstr "mercredi"
+
+#: sleep/models.py:11
+msgid "thursday"
+msgstr "jeudi"
+
+#: sleep/models.py:12
+msgid "friday"
+msgstr "vendredi"
+
+#: sleep/models.py:13
+msgid "saturday"
+msgstr "samedi"
+
+#: sleep/models.py:14
+msgid "sunday"
+msgstr "dimanche"
+
+#: sleep/models.py:15
+msgid "week"
+msgstr "semaine"
+
+#: sleep/models.py:16
+msgid "weekend"
+msgstr "weekend"
+
+#: sleep/models.py:17
+msgid "all"
+msgstr "tout"
+
+#: sleep/models.py:18
+msgid "(Unknown)"
+msgstr "(inconnu)"
+
+#: sleep/models.py:23
+msgid "sleep"
+msgstr "sommeil"
+
+#: sleep/models.py:24
+msgid "wakeup"
+msgstr "réveil"
+
+#: templates/base.html:25
+msgid "Bunny"
+msgstr "Lapin"
+
+#: templates/base.html:38
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: templates/base.html:45
+msgid "Login"
+msgstr "Connexion"
+
+#: weather/models.py:9
+msgid "now"
+msgstr "maintenant"
+
+#: weather/models.py:11
+msgid "today"
+msgstr "aujourd'hui"

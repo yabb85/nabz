@@ -1,0 +1,8 @@
+{
+    "name": "memo",
+    "one_click": false,
+    "double_click": false,
+    "record": true,
+    "rfid": false,
+    "cron": false
+}

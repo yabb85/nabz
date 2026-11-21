@@ -1,0 +1,8 @@
+{
+    "name": "clock",
+    "one_click": false,
+    "double_click": false,
+    "record": false,
+    "rfid": false,
+    "cron": true
+}

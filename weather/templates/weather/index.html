@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Weather configuration</h1>
+    <table>
+        <tr>
+            <th>bunny/zstamp name</th>
+            <th>action</th>
+            <th>link</th>
+        </tr>
+        {% for conf in weather_confs %}
+            <tr>
+                {% if conf.bunny.name %}
+                    <td>{{ conf.bunny.name }}</td>
+                {% else %}
+                    <td>{{ conf.zstamp.name }}</td>
+                {% endif %}
+                <td>{{ conf.action }}</td>
+                <td><a href="/weather/edit/{{ conf.pk }}">edit</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

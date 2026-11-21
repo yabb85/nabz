@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+    <div class="pure-g">
+        <div class="pure-u-1 card-grid">
+            {% for zstamp in zstamps %}
+                <div class="pure-u-1-4 card">
+                    <div class="card-zstamp">
+                        <div class="card-zstamp-header">
+                            <h1>{{ zstamp.name }}</h1>
+                        </div>
+                        <a href="zstamp/details/{{ zstamp.serial }}">edit</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

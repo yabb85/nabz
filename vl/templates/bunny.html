@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+    {% translate "All bunnnies" %}
+    <div class="pure-g">
+        <div class="pure-u-lg-1-2 pure-u-1 card-grid">
+            <div class="pure-g">
+                {% for bunny in bunnies %}
+                    <div class="pure-u-xxl-11-24 pure-u-1 card">
+                        <div class="card-bunny">
+                            <div class="card-bunny-header">
+                                <h1>{{ bunny.name }}</h1>
+                            </div>
+                            <div>
+                                <span>{{ bunny.sn }}</span>
+                            </div>
+                            <a href="bunny/details/{{ bunny.sn }}">edit</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="pure-u-1-2">
+            {% translate "Add a new bunny" %}
+            <form action="{% url 'create' %}" method="post">
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" value="OK">
+            </form>
+        </div>
+    </div>
+{% endblock %}

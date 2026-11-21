@@ -1,0 +1,8 @@
+{
+    "name": "weather",
+    "one_click": true,
+    "double_click": true,
+    "record": false,
+    "rfid": true,
+    "cron": false
+}

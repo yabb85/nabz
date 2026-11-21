@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div>
+    <h1>Memo configuration</h1>
+    <table>
+        <tr>
+            <th>Bunny name</th>
+            <th>link</th>
+        </tr>
+        {% for conf in memo_confs %}
+            <tr>
+                <td>{{ conf.bunny.name }}</td>
+                <td><a href="/memo/edit">edit</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

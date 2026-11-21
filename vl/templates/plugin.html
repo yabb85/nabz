@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<table>
+    <tr>
+        <th>name</th>
+        <th>config</th>
+    </tr>
+    {% for plugin in plugins %}
+        <tr>
+            <td>{{ plugin.name }}</td>
+            <td><a href="/{{plugin.name }}/">config</a>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div>
+    <h1>Mood configuration</h1>
+    <table>
+        <tr>
+            <th>bunny name</th>
+            <th>activated</th>
+            <th>link</th>
+        </tr>
+        {% for conf in mood_confs %}
+            <tr>
+                <td>{{ conf.bunny.name }}</td>
+                <td>{{ conf.enabled }}</td>
+                <td><a href="/mood/edit/{{ conf.pk }}">edit</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

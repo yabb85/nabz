@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Clock configuration</h1>
+    <table>
+        <tr>
+            <th>bunny name</th>
+            <th>enabled</th>
+            <th>link</th>
+        </tr>
+        {% for clock in clocks %}
+            <tr>
+                <td>{{ clock.bunny.name }}</td>
+                <td>{{ clock.enabled }}</td>
+                <td><a href="edit/{{ clock.pk }}">edit</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
